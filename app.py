@@ -46,9 +46,9 @@ def index():
 
         except Exception as e:
             print(f"An error occurred while sending the email: {e}")
-            return render_template("Contact_Us.html", error="An error occurred while sending the email.")
+            return render_template("index.html", error="An error occurred while sending the email.")
 
-    return render_template("Contact_Us.html")
+    return render_template("index.html")
 
 @app.route("/success")
 def success():
